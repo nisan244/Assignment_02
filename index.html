@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark p-4 px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: #a46de2; font-weight: bold; font-size: 25px" href="#">TEST API</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto gap-4" style="font-size: 18px; font-weight: bold">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="p-2">
+        <section id="foods">
+            <div id="search-section" class=" d-flex align-items-center justify-content-center mt-5">
+                <div class='container text-center pb-5'>
+                    <h2 style="color: #a46de2; font-weight: bold;">SEARCH<span class='text-light'> BY FOOD NAME</span>
+                    </h2>
+                    <form id="searchForm" action="#" role="search">
+                        <div class="input-group w-50 m-auto mb-3">
+                            <input id="searchInput" type="search" class="form-control" placeholder="Enter food name...">
+                            <button class="btn-sub" type="submit" id="submit-btn">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container mt-2">
+            <div class="con-1 row">
+                <div class="cart-container col-12 col-md-2 border border-2 mt-3 mt-md-0 order-1 order-md-2 mb-2">
+                    <h3 class="text-center p-2" style="color: white; font-weight: bold; background: #a46de2;">Cart</h3>
+                    <hr />
+                    <div id="cart-item" class="cart-item text-center">
+                        <h3 style="font-weight: bold;">Total: <span id="count">0</span></h3>
+                        <hr />
+                    </div>
+                </div>
+                <div id="container-2"
+                    class="container-2 mt-4 col-12 col-md-10 d-flex gap-2 flex-wrap align-items-center justify-content-center border border-2 p-1 order-2 order-md-1">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="detailsModal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 id="modal-title" class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modal-body" class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!------- footer ------->
+    <footer class="bg-dark text-center text-white py-4">
+        <div>
+            <small>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024 || Nisan Hossain <br>Dhaka,
+                Bangladesh</small>
+            <div class="f-icons">
+                <ul class="f-icons">
+                    <li class="">
+                        <a class="nav-link" href="https://github.com/nisan244/" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li class="">
+                        <a class="nav-link" href="https://www.linkedin.com/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="">
+                        <a class="nav-link" href="https://m.youtube.com/" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
